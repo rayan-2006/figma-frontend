@@ -12,7 +12,7 @@
     --white: #ffffff;
     --green-light: #B4C8B1;
     --yellow-accent: #FFC107;
-    --green-dark: #003500;
+    --green-dark: #0A490A;
     --black-overlay: rgba(0, 0, 0, 0.582);
 }
 
@@ -424,4 +424,29 @@ textarea:focus {
 .porduct-introduction3 {
     background-color: var(--green-dark);
     color: var(--white);
+}
+
+.porduct-introduction3-menu ul {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    list-style: none;
+}
+
+.yellow-accent {
+    color: var(--yellow-accent);
+}
+
+.card-section3 {
+    margin-top: 2rem;
+}
+
+.card-section3 .card-item {
+    color: var(--white);
+    border: 1px solid var(--white);
+}
+
+.card-section3 .plus,
+.card-section3 .minus {
+    color: var(--green-dark);
 }
