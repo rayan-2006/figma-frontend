@@ -4,13 +4,21 @@
     box-sizing: border-box;
 }
 
+:root {
+    --black: #000000;
+    --white: #ffffff;
+    --green-light: #B4C8B1;
+    --yellow-accent: #FFC107;
+    --green-dark: #003500;
+}
+
 .navbar {
-    background-color: #0A490A;
+    background-color: var(--green-dark);
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    color: white;
-    padding: 2rem;
+    color: var(--white);
+    padding: 1.5rem;
 }
 
 .menu {
@@ -30,12 +38,22 @@
     height: 100%;
     background: transparent;
     color: inherit;
-    padding-inline: 1rem;
-    border: 1px solid white;
+    padding-inline: 2rem;
+    border: 1px solid var(--white);
+}
+
+.search-box .search-input::placeholder {
+    color: inherit;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
 }
 
 .search-box select option {
-    color: black;
+    color: var(--black);
 }
 
 .search-box img {
@@ -61,4 +79,93 @@
 
 .icon-box img {
     height: 30%;
+}
+
+.banner {
+    background-color: var(--yellow-accent);
+    color: var(--green-dark);
+    padding: 8rem 5rem 2rem 5rem;
+    position: relative;
+}
+
+.badge {
+    background-color: var(--green-light);
+    padding: 0.3em 1rem;
+    font-size: 0.8rem;
+    border-radius: 0.8rem;
+}
+
+.title {
+    font-size: 5rem;
+    font-weight: 900;
+}
+
+.about {
+    width: 70%;
+    font-size: 1.5rem;
+}
+
+.button-baner {
+    font-size: 1rem;
+    font-weight: bolder;
+    padding: 0.3rem 1.5rem;
+    border: none;
+    border-radius: 0.5rem;
+    background-color: var(--green-light);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    color: inherit;
+}
+
+.button-baner img {
+    width: 0.5rem;
+}
+
+.margin-top-baner {
+    margin-top: 1.5rem;
+}
+
+.Pegatina-descuento {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    text-align: center;
+    top: 8rem;
+    width: 10rem;
+}
+
+.Pegatina-descuento img {
+    animation: rotate360 15s linear infinite;
+    width: 100%;
+}
+
+@keyframes rotate360 {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.Pegatina-descuento strong {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--white);
+}
+
+.Fruit-image {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 35%;
+}
+
+.Fruit-image img {
+    width: 100%;
 }
