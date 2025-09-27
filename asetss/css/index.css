@@ -179,7 +179,9 @@ textarea:focus {
     color: var(--green-dark);
 }
 
-.porduct-introduction {
+.porduct-introduction1,
+.porduct-introduction2,
+.porduct-introduction3 {
     padding: 3rem 9rem;
 }
 
@@ -225,7 +227,7 @@ textarea:focus {
     z-index: 1;
     position: absolute;
     border-radius: 1rem;
-    background-color: var( --black-overlay);
+    background-color: var(--black-overlay);
     -webkit-backdrop-filter: blur(1px);
     backdrop-filter: blur(1px);
     width: 100%;
@@ -266,4 +268,160 @@ textarea:focus {
 .pordoct-information-button img,
 .pordoct-button img {
     width: 0.5rem;
+    object-fit: fill;
+}
+
+.card-section {
+    display: flex;
+    justify-content: space-between
+}
+
+.card-item {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    border-radius: 1rem;
+    border: 1px solid var(--green-dark);
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    color: var(--green-dark);
+    width: 28%;
+}
+
+.card-item .image {
+    width: 344px;
+    height: 307px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.card-item .image img {
+    width: 80%;
+    object-fit: cover;
+}
+
+.card-information {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.card-information strong {
+    font-size: 1.7rem;
+}
+
+.star-box .star {
+    color: var(--yellow-accent);
+    font-size: 1.5rem;
+}
+
+.star-box .stae-number {
+    font-size: 1rem;
+}
+
+.sell-box b {
+    font-size: 1.5rem;
+}
+
+.sell-box small {
+    font-size: 0.5rem;
+}
+
+.sell-box del {
+    font-size: 1rem;
+}
+
+.input-box {
+    display: flex;
+    gap: 0.5rem;
+    width: 100%;
+}
+
+.size-box,
+.quantity-box {
+    width: 50%;
+}
+
+.size-input,
+.number-input {
+    position: relative;
+    height: 3rem;
+    width: 100%;
+    margin: 1rem 0;
+}
+
+.size-input select,
+.number-input input {
+    padding: 0.5rem;
+    width: 100%;
+    height: 100%;
+    border: 1px solid var(--green-dark);
+    border-radius: 0.5rem;
+}
+
+.quantity-box {
+    width: 50%;
+}
+
+.number-input input {
+    text-align: center;
+}
+
+.size-input small {
+    position: absolute;
+    top: 50%;
+    right: 1rem;
+    transform: translateY(-50%);
+    font-weight: bolder;
+    color: var(--green-dark);
+}
+
+.number-input .plus {
+    position: absolute;
+    top: 50%;
+    right: 1rem;
+    transform: translateY(-50%);
+}
+
+.number-input .minus {
+    position: absolute;
+    top: 50%;
+    left: 1rem;
+    transform: translateY(-50%);
+}
+
+.card-button {
+    color: var(--green-dark);
+    border-radius: 0.5rem;
+    background-color: var(--yellow-accent);
+    padding: 1rem;
+    border: none;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.card-button img {
+    width: 0.5rem;
+    object-fit: fill;
+}
+
+.heart {
+    position: absolute;
+    top: 0.5rem;
+    right: 1rem;
+    color: var(--yellow-accent);
+}
+
+.heart img {
+    width: 1.2rem;
+}
+
+.porduct-introduction3 {
+    background-color: var(--green-dark);
+    color: var(--white);
 }
