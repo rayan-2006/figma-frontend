@@ -1,4 +1,12 @@
+/* ===================== CSS Comments & Structure ===================== */
+
+
+/* ===================== Font ===================== */
+
 @import url('https://fonts.googleapis.com/css2?family=Kadwa:wght@400;700&display=swap');
+
+/* ===================== Default Styles ===================== */
+
 * {
     margin: 0;
     padding: 0;
@@ -6,6 +14,9 @@
     font-family: "Kadwa", serif;
     line-height: 1.2;
 }
+
+
+/* ===================== Color Palette ===================== */
 
 :root {
     --pink: #EF174B;
@@ -19,28 +30,97 @@
     --black-overlay: rgba(0, 0, 0, 0.582);
 }
 
-.navbar {
+
+/* ===================== Buttons ===================== */
+
+
+/* Primary Button */
+
+.button-baner {
+    font-size: 1rem;
+    font-weight: bolder;
+    padding: 0.5rem 2rem;
+    border: none;
+    border-radius: 0.5rem;
+    background-color: var(--green-light);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    color: inherit;
+    cursor: pointer;
+}
+
+.button-baner img {
+    width: 0.5rem;
+}
+
+
+/* Secondary Button */
+
+.yellow-button {
+    width: 10rem;
+    height: 2rem;
+    background-color: var(--yellow-accent);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 0.4rem 1rem;
+    border-radius: 0.5rem;
+    color: var(--green-dark);
+    font-weight: bolder;
+    border: none;
+    cursor: pointer;
+}
+
+.yellow-button .img {
+    width: 0.5rem;
+    object-fit: fill;
+}
+
+
+/* ===================== Header ===================== */
+
+.header {
+    padding: 3rem 9rem;
     background-color: var(--green-dark);
+    color: var(--white);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color: var(--white);
-    padding: 3rem 9rem;
 }
+
+
+/* Header Menu */
 
 .menu {
+    list-style: none;
     display: flex;
     gap: 2rem;
-    list-style: none;
 }
 
+li:hover {
+    cursor: pointer;
+    color: var(--yellow-accent);
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+
+/* Search Box */
+
 .search-box {
-    height: 2rem;
     position: relative;
+    height: 2rem;
     display: flex;
 }
 
-.search-box .search-input,
+.search-input,
 .search-box select {
     height: 100%;
     background: transparent;
@@ -59,40 +139,77 @@ textarea:focus {
     outline: none;
 }
 
-.search-box select option {
+select option {
     color: var(--black);
 }
 
 .search-box img {
     position: absolute;
-    left: 5px;
-    top: 3px;
+    left: 2px;
+    top: 2px;
     height: 85%;
 }
 
-.icon-boxes {
+
+/* Profile / Cart / Wishlist Box */
+
+.header-actions {
     display: flex;
     gap: 2rem;
 }
 
-.icon-box {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    height: 4rem;
-    font-size: 0.8rem;
+.header-action {
+    height: 2rem;
 }
 
-.icon-box img {
-    height: 30%;
+.header-action a {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.3rem;
+    cursor: pointer;
+    font-size: 0.7rem;
 }
+
+.header-action a img {
+    height: 50%;
+}
+
+
+/* ===================== Main Container ===================== */
+
+.container {
+    color: var(--green-dark);
+}
+
+
+/* ===================== Section Padding ===================== */
+
+.banner,
+.porduct-introduction1,
+.product-category-section,
+.green-product-category-section,
+.colorful-product-category-section,
+.category-reviews-section,
+.blog-articles-section {
+    padding: 3rem 9rem;
+}
+
+
+/* ===================== Banner ===================== */
 
 .banner {
     background-color: var(--yellow-accent);
     color: var(--green-dark);
-    padding: 6rem 9rem;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2rem;
 }
 
 .badge {
@@ -112,27 +229,8 @@ textarea:focus {
     font-size: 1.5rem;
 }
 
-.button-baner {
-    font-size: 1rem;
-    font-weight: bolder;
-    padding: 0.5rem 2rem;
-    border: none;
-    border-radius: 0.5rem;
-    background-color: var(--green-light);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
-    color: inherit;
-}
 
-.button-baner img {
-    width: 0.5rem;
-}
-
-.margin-top-baner {
-    margin-top: 1.5rem;
-}
+/* ===================== Rotating Image ===================== */
 
 .Pegatina-descuento {
     position: absolute;
@@ -178,30 +276,23 @@ textarea:focus {
     width: 100%;
 }
 
-.container {
-    color: var(--green-dark);
-}
 
-.porduct-introduction1,
-.porduct-introduction2,
-.porduct-introduction3,
-.porduct-introduction4,
-.survey,
-.blogs {
-    padding: 3rem 9rem;
-}
+/* ===================== Category Section ===================== */
 
-.title-introduction {
+.category-header {
     display: flex;
     justify-content: space-between;
     margin: 2rem 0;
 }
 
-.text-titel {
+.category-title {
     font-size: 2rem;
 }
 
-.pordocts-section {
+
+/* ===================== Product Cards ===================== */
+
+.category-cards {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -256,33 +347,13 @@ textarea:focus {
     font-size: 1.2rem;
 }
 
-.pordoct-information-button,
-.pordoct-button {
-    background-color: var(--yellow-accent);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 1rem;
-    width: fit-content;
-    padding: 0.4rem 1rem;
-    border-radius: 0.5rem;
-    color: var(--green-dark);
-    font-weight: bolder;
-    border: none;
-}
-
-.pordoct-information-button img,
-.pordoct-button img {
-    width: 0.5rem;
-    object-fit: fill;
-}
-
-.card-section {
+.product-cards {
+    position: relative;
     display: flex;
     justify-content: space-between
 }
 
-.card-item {
+.product-card {
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -295,7 +366,7 @@ textarea:focus {
     width: 28%;
 }
 
-.card-item .image {
+.product-card .image {
     width: 344px;
     height: 307px;
     display: flex;
@@ -303,7 +374,7 @@ textarea:focus {
     justify-content: center;
 }
 
-.card-item .image img {
+.product-card .image img {
     width: 80%;
     object-fit: cover;
 }
@@ -339,6 +410,9 @@ textarea:focus {
 .sell-box del {
     font-size: 1rem;
 }
+
+
+/* ===================== Inputs ===================== */
 
 .input-box {
     display: flex;
@@ -390,6 +464,7 @@ textarea:focus {
     top: 50%;
     right: 1rem;
     transform: translateY(-50%);
+    color: var(--green-dark);
 }
 
 .number-input .minus {
@@ -397,9 +472,14 @@ textarea:focus {
     top: 50%;
     left: 1rem;
     transform: translateY(-50%);
+    color: var(--green-dark);
 }
 
+
+/* ===================== Card Button & Heart ===================== */
+
 .card-button {
+    width: 100%;
     color: var(--green-dark);
     border-radius: 0.5rem;
     background-color: var(--yellow-accent);
@@ -409,6 +489,7 @@ textarea:focus {
     align-content: center;
     justify-content: center;
     gap: 1rem;
+    cursor: pointer;
 }
 
 .card-button img {
@@ -427,39 +508,36 @@ textarea:focus {
     width: 1.2rem;
 }
 
-.porduct-introduction3 {
+.green-product-category-section {
     background-color: var(--green-dark);
     color: var(--white);
 }
 
-.porduct-introduction3-menu ul {
+.green-product-category-section-menu ul {
     display: flex;
     flex-direction: row;
     gap: 2rem;
     list-style: none;
 }
 
-.porduct-introduction3-menu li {
+.green-product-category-section-menu li {
     cursor: pointer;
 }
 
-.click:focus {
+.btn-primary:hover {
     color: var(--yellow-accent);
 }
 
-.card-section3 {
+.btn-primary:focus {
+    color: var(--yellow-accent);
+}
+
+.card-section-green {
     margin-top: 2rem;
     position: relative;
-}
-
-.card-section3 .card-item {
+    color: var(--white);
     color: var(--white);
     border: 1px solid var(--white);
-}
-
-.card-section3 .plus,
-.card-section3 .minus {
-    color: var(--green-dark);
 }
 
 .Left-arrow {
@@ -475,7 +553,7 @@ textarea:focus {
     transform: translate(120%);
 }
 
-.juice-shake-container {
+.colorful-product-cards {
     display: flex;
     justify-content: space-between;
     margin-top: 3rem;
@@ -547,8 +625,10 @@ textarea:focus {
     top: -2rem;
     right: -3rem;
     filter: drop-shadow(10px 10px 4px rgba(0, 0, 0, 0.45));
-    ;
 }
+
+
+/* ===================== Banner Mine ===================== */
 
 .banner-mine {
     display: flex;
@@ -606,13 +686,17 @@ textarea:focus {
     justify-content: space-evenly;
     align-items: center;
     gap: 1rem;
+    cursor: pointer;
 }
 
 .button-baner-mine img {
     height: 70%;
 }
 
-.survey {
+
+/* ===================== Category Reviews ===================== */
+
+.category-reviews-section {
     display: flex;
     flex-direction: row;
 }
@@ -641,11 +725,15 @@ textarea:focus {
     justify-content: space-evenly;
     align-items: center;
     gap: 1rem;
+    cursor: pointer;
 }
 
 .survey-button img {
     width: 7%;
 }
+
+
+/* Testimonials */
 
 .survey-testimonials {
     width: 50%;
@@ -729,7 +817,8 @@ textarea:focus {
     right: -1rem;
 }
 
-.blogs {}
+
+/* ===================== Blog Section ===================== */
 
 .blog-section-header {
     display: flex;
@@ -798,11 +887,15 @@ textarea:focus {
     justify-content: space-evenly;
     align-items: center;
     gap: 1rem;
+    cursor: pointer;
 }
 
 .blog-card-button img {
     width: 7%;
 }
+
+
+/* ===================== Footer ===================== */
 
 .footer {
     position: relative;
@@ -892,7 +985,8 @@ textarea:focus {
     position: absolute;
     border: 1px solid var(--white);
     background-color: var(--yellow-accent);
-    align-items: center
+    align-items: center;
+    cursor: pointer;
 }
 
 .footer-bottom {
@@ -910,3 +1004,28 @@ textarea:focus {
 .footer-author span {
     color: var(--yellow-accent);
 }
+
+
+/* ==========================
+   Responsive Media Queries
+   ========================== */
+
+
+/* Small Mobile Devices (≤575px) */
+
+@media (max-width: 575px) {}
+
+
+/* Tablets (576px – 991px) */
+
+@media (max-width: 991px) {}
+
+
+/* Small Laptops / Desktops (992px – 1199px) */
+
+@media (max-width: 1199px) {}
+
+
+/* Large Desktops (≥1200px) */
+
+@media (min-width: 1200px) {}
