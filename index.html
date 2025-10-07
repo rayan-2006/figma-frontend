@@ -22,55 +22,71 @@
     <!-- ================= HEADER SECTION ================= -->
     <header class="header">
         <!-- Logo -->
-        <h3>FOODMART</h3>
+        <div class="logo">
+            <h3 class="foodmart">FOODMART</h3>
+        </div>
+        <div class="header-menu">
+            <!-- Navigation Menu -->
+            <ul class="menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Fruit</a></li>
+                <li><a href="#">Vegetable</a></li>
+            </ul>
 
-        <!-- Navigation Menu -->
-        <ul class="menu">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Fruit</a></li>
-            <li><a href="#">Vegetable</a></li>
-        </ul>
+            <!-- menu-mobile -->
+            <a href="#porduct-model" title="menu-mobile">
+                <img class="menu-mobile" src="/asetss/img/menu_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+            </a>
 
-        <!-- menu-mobile -->
-        <a href="#" title="menu-mobile">
-            <img class="menu-mobile" src="/asetss/img/menu_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg" alt="">
-        </a>
+            <div id="porduct-model" class="porduct-model">
 
-        <!-- Search Box -->
-        <div class="search-box">
-            <input type="text" class="search-input" placeholder="Search products">
-            <select title="Category">
+                <a href="#" class="overlay" title="1"></a>
+
+                <div class="menu-content">
+                    <div class="logo">
+                        <h3 class="foodmart">FOODMART</h3>
+                    </div>
+                    <hr>
+
+                </div>
+            </div>
+
+            <!-- Search Box -->
+            <div class="search-box">
+                <input type="text" class="search-input" placeholder="Search products">
+                <select title="Category">
                 <option value="cart">Cart</option>
                 <option value="profile">Profile</option>
                 <option value="logout">Logout</option>
             </select>
-            <img src="/asetss/img/Vector.svg" alt="Search Icon">
-        </div>
-
-        <!-- Header Actions: Profile / Wishlist / Cart -->
-        <div class="header-actions">
-            <!-- Profile -->
-            <div class="header-action">
-                <a href="#">
-                    <img src="/asetss/img/Group.svg" alt="Profile">
-                    <label>Profile</label>
-                </a>
+                <img src="/asetss/img/Vector.svg" alt="Search Icon">
             </div>
 
-            <!-- Wishlist -->
-            <div class="header-action">
-                <a href="#">
-                    <img src="/asetss/img/Heart.svg" alt="Wishlist">
-                    <label>Wishlist</label>
-                </a>
-            </div>
+            <!-- Header Actions: Profile / Wishlist / Cart -->
+            <div class="header-actions">
+                <!-- Profile -->
+                <div class="header-action">
+                    <a href="#">
+                        <img src="/asetss/img/Group.svg" alt="Profile">
+                        <label>Profile</label>
+                    </a>
+                </div>
 
-            <!-- My Cart -->
-            <div class="header-action">
-                <a href="#">
-                    <img src="/asetss/img/Shopping cart.svg" alt="Cart">
-                    <label>My Cart</label>
-                </a>
+                <!-- Wishlist -->
+                <div class="header-action">
+                    <a href="#">
+                        <img src="/asetss/img/Heart.svg" alt="Wishlist">
+                        <label>Wishlist</label>
+                    </a>
+                </div>
+
+                <!-- My Cart -->
+                <div class="header-action">
+                    <a href="#">
+                        <img src="/asetss/img/Shopping cart.svg" alt="Cart">
+                        <label>My Cart</label>
+                    </a>
+                </div>
             </div>
         </div>
     </header>
@@ -826,7 +842,9 @@
                     </p>
                     <a href="#">
                         <button class="button-baner-mine">
-                            View More
+                            <span>
+                                View More
+                            </span>
                             <img src="/asetss/img/Arrow Right.svg" alt="">
                         </button>
                     </a>
@@ -842,7 +860,10 @@
                     </p>
                     <a href="#">
                         <button class="button-baner-mine">
-                            View More
+                            <span>
+                                View More
+                            </span>
+                            
                             <img src="/asetss/img/Arrow Right.svg" alt="">
                         </button>
                     </a>
